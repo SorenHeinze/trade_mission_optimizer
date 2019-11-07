@@ -335,15 +335,13 @@ class Trader(object):
 	# This function exists just to have fewer indentations in _keep_closest().
 	# It figures out if two stations have the same type and amount of different 
 	# available commodities.
-	def _find_equal_commodities(self, system, station, commodities):
+	def _find_equal_commodities(self, commodities):
 		self.check_these = set()
 
-		for this_system, stations in self.warez_per_location.items():
-			for this_station, these_commodities in stations.items():
-				if commodities == these_commodities and \
-							this_system != system and this_station != station:
+		for system, stations in self.warez_per_location.items():
+			for station, these_commodities in stations.items():
+				if commodities == these_commodities:
 					self.check_these.update([(system, station)])
-					self.check_these.update([(this_system, this_station)])
 
 
 	# Dito.
@@ -399,7 +397,7 @@ class Trader(object):
 				best_distance = distance
 				best_system = system
 				best_station = station
-				best_station_landable = False
+				best_station_landable = on_planet
 
 		# ... all others can be scheduled for deletion. That however, has to 
 		# take place AFTER the loops in _keep_closest() are finished because 
@@ -408,6 +406,15 @@ class Trader(object):
 		for system, station in self.check_these:
 			if system != best_system and station != best_station:
 				self.to_be_deleted.update([(system, station)])
+
+
+	# This function exists just so that keep _keep_closest() is more tidy.
+	def _already_checked(self, commodities, checked_these):
+		if sorted(list(commodities)) in checked_these:
+			return True
+		else:
+			checked_these.append(sorted(commodities))
+			return False
 
 
 	# If there are stations that have the same type and amount of commodities 
@@ -419,9 +426,14 @@ class Trader(object):
 		# here because otherwise self.to_be_deleted will contain old elements.
 		self.to_be_deleted = set()
 
+		checked_these = []
+
 		for system, stations in self.warez_per_location.items():
 			for station, commodities in stations.items():
-				self._find_equal_commodities(system, station, commodities)
+				if self._already_checked(commodities, checked_these):
+					continue
+
+				self._find_equal_commodities(commodities)
 				self._find_furthest(commodities)
 
 		empty_systems = set()

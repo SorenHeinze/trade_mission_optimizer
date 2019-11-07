@@ -1,0 +1,57 @@
+ATTENTION: 
+- USE TABS TO SEPARATE INFORMATION!
+- Order needs to be < STATION NAME >, < SYSTEM NAME>, < COMMODITY NAME >, < QUANTITY > but with TABS instead of commas.
+- The "commodity" of a delivery mission is always "Delivery". It doesn't matter what you haul.
+- All names (stations, systems, commodities) need to be as they are in game.
+- It is OK to leave "empty" entries as long as the number of tabs is NOT 4!
+- Below I have some examples to guide you. DELETE THESE!
+
+
+
+< START LOCATION > --- DON'T DELETE THE TAB AFTER "at"!
+
+I'm at	Colonia Dream	Ratraii
+
+
+
+< Missions START > --- DON'T DELETE THIS LINE! THE PROGRAM WILL STOP WORKING IF YOU DO!
+
+This is an example for two source and return missions.
+Jaques Station	Colonia	Fish	23
+Jaques Station	Colonia	Gallium	42
+
+This is an example for empty entries to be used later. Observe that the number of tabs is just two!
+Giles Station	Deriso	
+Giles Station	Deriso	
+
+This is an example for three delivery missions. It doesn't matter what I need to deliver.
+Whirling Station	Ogmar	Delivery	25
+Whirling Station	Ogmar	Delivery	45
+Whirling Station	Ogmar	Delivery	2
+
+This is an example for all of the above.
+Hipparque - Cartographers' University	Pytheas	Micro-Weave Cooling Hoses	63
+Hipparque - Cartographers' University	Pytheas	Delivery	54
+Hipparque - Cartographers' University	Pytheas	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

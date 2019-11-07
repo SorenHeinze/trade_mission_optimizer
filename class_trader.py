@@ -471,7 +471,7 @@ class Trader(object):
 					# A station may not have a given commodity.
 					try:
 						self.warez_per_location[system][station].remove(commodity)
-					except ValueError:
+					except KeyError:
 						pass
 
 				# Don't delete while iterating over it.

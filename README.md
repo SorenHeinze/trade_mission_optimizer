@@ -1,5 +1,5 @@
 # trade_mission_optimizer
-You have a bunch of trading missions in Elite:Dangerous and want to finish them asap? This program helps you to find an optimal order if missions.
+You have a bunch of trading missions in Elite:Dangerous and want to finish them asap? This program helps you to find an optimal order of missions.
 
 ## Problem:
 You are a trader in Elite:Dangerous and you have a bunch of trading missions. Several factions on different stations want you to source and return various commodities? You also need to deliver stuff to different stations? You would prefer picking up commodities at stations where you have to go to anyway? At the same time you want to visit as few stations as possible for commodities that can't be found at mission locations?

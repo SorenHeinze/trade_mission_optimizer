@@ -30,7 +30,7 @@ Whirling Station	Ogmar	Delivery	45
 Whirling Station	Ogmar	Delivery	2
 
 This is an example for all of the above.
-Hipparque - Cartographers' University	Pytheas	Micro-Weave Cooling Hoses	63
+Hipparque - Cartographers' University	Pytheas	Animal Meat	63
 Hipparque - Cartographers' University	Pytheas	Delivery	54
 Hipparque - Cartographers' University	Pytheas	
 

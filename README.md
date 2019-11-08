@@ -94,12 +94,12 @@ ATTENTION: Use quotes if the commodity contains more than one word!
 When the program is called for the first time that day the database needs to be build. Thus all parameters should be passed if the default values are not working for you. In this example the long notation is used.
 
     python3 trade_mission_optimizer.py --size M --max-jumps 4 --max-distance 5000
-         --minumim-supply 500 --jumprange 23
+         --minumim-supply 500 --jumprange 23.42
 
 If the database shall be rebuild with changed parameters. In this example the default values are used for max-distance, minimum-supply and max-jumps. When building the database, the exact cargo space of your ship is not of interest. To force the rebuilding of the database < -b > needs to be added to the parameters.  
 ATTENTION: Re-building of the database is also required if the system of origin has changed significantly!
 
-    python3 trade_mission_optimizer.py -s M -b
+    python3 trade_mission_optimizer.py -s M -j 23.42 -b
 
 If you want to force download all files.  
 ATTENTION: The database needs to be rebuild to consider the new data.

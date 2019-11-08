@@ -68,7 +68,7 @@ optional arguments:
                         set. < commodity > needs to be written as in the game.
   --build-database, -b  Force build the database. Needs to be done if the ship
                         or user parameters (e.g. the "home coordinates") have
-                        change significantly or if newer files were downloaded
+                        changed significantly or if newer files were downloaded
                         manually. Will ignore < run >.
   --download-files, -d  Force download the necessary files from EDDB.io. Will
                         ignore < run >.

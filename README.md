@@ -89,7 +89,7 @@ Basic usage if the database was build but your free cargo space is different to 
 If the database is build and you want to know if a commodity (is available at relevant stations).  
 ATTENTION: Use quotes if the commodity contains more than one word!    
 
-    python3 trade_mission_optimizer.py --ca "Micro-Weave Cooling Hoses"
+    python3 trade_mission_optimizer.py -ca "Micro-Weave Cooling Hoses"
 
 When the program is called for the first time that day the database needs to be build. Thus all parameters should be passed if the default values are not working for you. In this example the long notation is used.
 

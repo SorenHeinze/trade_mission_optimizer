@@ -41,7 +41,7 @@
 # ATTENTION: The mission data needs to be provided in a separate file 
 # called "000_missions.txt". 
 # The order of information in there is 
-# Station nameme	System name	Commodity	Amount
+# Station name	System name	Commodity	Amount
 # < Commodity > needs to be "Delivery" if something just needs to be delivered
 # 
 # ATTENTION: Filenamesare hardcoded!

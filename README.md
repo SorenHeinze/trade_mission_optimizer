@@ -19,7 +19,7 @@ Preparations:
 
 Once this is done …
 ```
-python3 trade_mission_optimizer.py -h -r
+python3 trade_mission_optimizer.py -h
 usage: trade_mission_optimizer.py [-h] [--cargo free cargo space]
                                   [--jumprange ly] [--size padsize]
                                   [--max-jumps MAX_JUMPS] [--max-distance ls]
